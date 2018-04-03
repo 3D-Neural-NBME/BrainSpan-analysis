@@ -21,10 +21,13 @@ the gencode v10 is available in /data/
 Expression in BrainSpan was quantified via RSEQtools, we again followed the pipeline laid out in the BrainSpan documentation above to get as close to their pipeline as possible. This requires converting BAMs into SAMs and then MRFs, running the RSEQtools quantifier and merging the per-sample files. 
 
 a) Turn BAMs into SAMs with SortSam
+
 `samtools sort -o ${sample_name}.sorted.sam $bam`
 
 b) Turn SAM files into MRF files 
+
 `RSEQtools/bin/sam2mrf < $sam > /${sample_name}.sorted.mrf`
 
 c) Run transcript quantification
+
 `RSEQtools/bin/mrfQuantifier gencode.v10.merged.transcripts.txt  multipleOverlap < $mrf > ${sample_name}.expression.txt`
