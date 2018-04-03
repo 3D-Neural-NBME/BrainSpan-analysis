@@ -13,7 +13,7 @@ We matched BrainSpan by using the same Tophat and gencode versions. Below is a s
 
 `/seq/software/tophat2/tophat  --bowtie1 -r 150 -p 8
 -G gencode.v10.fixed.annotation.gtf
-./Homo_sapiens_assembly19.fasta 9A060216_S25_R1_001.fastq,9A060216_S25_R2_001.fastq`
+./Homo_sapiens_assembly19.fasta ${sample_name}_R1_001.fastq,${sample_name}_R2_001.fastq`
 
 the gencode v10 is available in /data/
 
