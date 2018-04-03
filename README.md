@@ -31,3 +31,5 @@ b) Turn SAM files into MRF files
 c) Run transcript quantification
 
 `RSEQtools/bin/mrfQuantifier gencode.v10.merged.transcripts.txt  multipleOverlap < $mrf > ${sample_name}.expression.txt`
+
+You can then follow sample code in scripts/gather_per_sample_quantifications.R to merge quantifications. The resulting quantifications used in the study are available in data/.
