@@ -88,3 +88,6 @@ final_annotated = subset(final_annotated,timepoint!="11.yrs")
 rm(artificial_tissue.sample_names,brain_region_artificial,final, final_annotated_tissue,orders,columns_to_select_v2,columns_to_select,genes_to_select,timepoints_of_interest,tissues_of_interest,brainspan_genes_expression,correlations)
 
 write.table(final_annotated, "~/Dropbox (Personal)/3D_Neural_NBME:BrainSpan_analysis/final.merged.brainspan.organoid.correlation.matrix.txt", sep = "\t", quote=F, row.names=F, col.names=T)
+
+write.table(orders_timepoint, "~/Dropbox (Personal)/3D_Neural_NBME:BrainSpan_analysis/orders_timepoint.txt", sep = "\t", quote=F, row.names=F, col.names=T)
+
