@@ -1,0 +1,9 @@
+Data to replicate the analysis featured in the manuscript is available at 
+https://www.dropbox.com/sh/t0z9n8bk4moal1c/AAAVPWBookwqObd0ojXRl6TGa?dl=0
+This link is hosted by the Zhang lab at the Broad Institute
+
+BrainSpan data is available at : http://www.brainspan.org/static/download.html (RNA-Seq Gencode v10 summarized to genes)
+
+In order to replicate analysis in the manuscript, you can follow two scripts
+1 - get_brainspan_organoid_expression_correlations.R
+2 - manuscript_plots.R
